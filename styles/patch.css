@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?i3l9s9');
+    src:  url('../fonts/icomoon.eot?i3l9s9#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?i3l9s9') format('truetype'),
+      url('../fonts/icomoon.woff?i3l9s9') format('woff'),
+      url('../fonts/icomoon.svg?i3l9s9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-arrow-thin-down:before {
+    content: "\e900";
+}
+  
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+  
+
+.nav-tags {
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    padding: 20px 15px;
+    box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 10%);
+    margin: 20px 0;
+}
+
+.nav-tags a:after {
+    display: none;
+}
+
+.nav-tags__header {
+    text-align: center;
+}
+
+.nav-tags__header a {
+    text-decoration: none !important;
+    border-bottom: 1px dashed #7cbd41;
+    color: #7cbd41;
+}
+
+.nav-tags__header a i {
+    vertical-align: middle;
+}
+
+.nav-tags__list {
+    padding-top: 15px;
+}
+
+.nav-tags__list div {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+.nav-tags__list div a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #9b806f;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #9b806f;
+}
+
+.nav-tags__list div a:hover,
+.nav-tags__list div.active a {
+    background: #7cbd41;
+    border-color: transparent;
+    color: #fff;
+}
+
+.nav-tags__toggle a {
+    border-radius: 15px !important;
+    background: #9b806f !important;
+    color: #fff !important;
+}
+
+.nav-tags__toggle__less {
+    display: none;
+}
+
+.nav-tags__toggle.pressed .nav-tags__toggle__less {
+    display: inline;
+}
+.nav-tags__toggle.pressed .nav-tags__toggle__more {
+    display: none;
+}
+
+
+@media (min-width: 1027px) {
+    .nav-tags {
+        padding: 20px 25px;
+    }
+
+    .nav-tags__list div {
+        margin: 0 15px 15px 0;
+    }
+    
+    .nav-tags__list div a {
+        font-size: 14px;
+    }
+}
+
+.card-info {
+    color: #2e1a13;
+}
+
+.card-info__name {
+    min-height: 3em;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.card-info__weight {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.card-info__order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-info__price {
+    padding-top: 10px;
+    padding-right: 20px;
+    flex-grow: 1;
+    font-size: 23px;
+    line-height: 0.9;
+    font-family: "BebasNeue";
+    font-weight: 500;
+    color: #553023;
+    position: relative;
+    top: .1em;
+}
+
+.card-info__more {
+    padding-top: 10px;
+    flex-grow: 1;
+}
+
+.card-info__more__button {
+    width: 100%;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    text-transform: none;
+}
+
+.card-info__days {
+    margin-top: 15px;
+    flex-basis: 100%;
+    font-size: 12px;
+    font-style: italic;
+    color: #515151;
+}
+
+@media (min-width: 1027px) {
+    .card-info__name {
+        font-size: 22px;
+    }
+    .card-info__weight {
+        font-size: 17px;
+    }
+    .card-info__price {
+        font-size: 39px;
+    }
+    .card-info__days {
+        font-size: 17px;
+    }
+}
