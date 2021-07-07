@@ -85,7 +85,13 @@
 }
 
 .nav-tags__header a i {
+    transition: all .2s;
+    display: inline-block;
     vertical-align: middle;
+}
+
+.nav-tags__header.collapsed a i {
+    transform: rotate(180deg);
 }
 
 .nav-tags__list {

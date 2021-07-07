@@ -2,6 +2,9 @@ $(function () {
     
     $(document).on('click', '.nav-tags__header a', function (e) {
         e.preventDefault();
+
+        $(this).closest('.nav-tags__header').toggleClass('collapsed');
+
         $(this)
             .closest('.nav-tags')
             .find('.nav-tags__crop')
