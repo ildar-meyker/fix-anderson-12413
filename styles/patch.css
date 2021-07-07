@@ -54,10 +54,6 @@
     display: table;
 }
 
-.text-transform-none {
-    text-transform: none !important;
-}
-
 .mb-0 {
     margin-bottom: 0 !important;
 }
@@ -65,6 +61,8 @@
 /* buttons */
 
 .c-button__default--outline {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
     border: 1px solid #7cbd41;
     text-transform: none;
     background: #fff;
@@ -324,6 +322,12 @@
 
 .cake-settings__button {
     margin-top: 10px;
+}
+.cake-settings__button__add {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border: 1px solid transparent;
+    text-transform: none;
 }
 
 .cake-settings__time {
