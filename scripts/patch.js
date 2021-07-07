@@ -1,4 +1,5 @@
 $(function () {
+    
     $(document).on('click', '.nav-tags__header a', function (e) {
         e.preventDefault();
         $(this)
@@ -23,4 +24,34 @@ $(function () {
         $rest.not($button).toggle();
         $button.toggleClass('pressed');
     });
+
+    $('.cake-options__wrap').each(function (){
+        $(this).find('.cake-options__list').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: $(this).find('.cake-options__prev'),
+            nextArrow: $(this).find('.cake-options__next'),
+            responsive: [
+              {
+                breakpoint: 1027,
+                settings: {
+                  slidesToShow: 3,
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  slidesToShow: 2,
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  slidesToShow: 1,
+                }
+              }
+            ]
+          });
+    });
+
 });

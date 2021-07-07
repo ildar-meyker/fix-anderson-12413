@@ -1,16 +1,17 @@
+/* font icons */
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?i3l9s9');
-    src:  url('../fonts/icomoon.eot?i3l9s9#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?i3l9s9') format('truetype'),
-      url('../fonts/icomoon.woff?i3l9s9') format('woff'),
-      url('../fonts/icomoon.svg?i3l9s9#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?2dfjkb');
+    src:  url('../fonts/icomoon.eot?2dfjkb#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?2dfjkb') format('truetype'),
+      url('../fonts/icomoon.woff?2dfjkb') format('woff'),
+      url('../fonts/icomoon.svg?2dfjkb#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-}
+  }
   
-[class^="icon-"], [class*=" icon-"] {
+  [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: never;
@@ -23,27 +24,50 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+  }
   
-.icon-arrow-thin-down:before {
+  .icon-arrow-thin-left:before {
+    content: "\e901";
+  }
+  .icon-arrow-thin-right:before {
+    content: "\e902";
+  }
+  .icon-arrow-thin-down:before {
     content: "\e900";
-}
+  }
   
 
+
+
+
+/* helpers */
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
-  
+.mb-0 {
+    margin-bottom: 0 !important;
+}
 
+
+
+  
+/* nav-tags */
 .nav-tags {
     background: #fff;
     border: 1px solid #d5d5d5;
     padding: 20px 15px;
     box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 10%);
     margin: 20px 0 40px 0;
+}
+.nav-tags--no-panel {
+    background: none;
+    box-shadow: none;
+    padding: 10px 0 !important;
+    border: 0;
+    margin: 20px 0;
 }
 
 .nav-tags a:after {
@@ -121,6 +145,11 @@
     }
 }
 
+
+
+
+
+/* card-info */
 .card-info {
     color: #2e1a13;
 }
@@ -188,5 +217,118 @@
     }
     .card-info__days {
         font-size: 17px;
+    }
+}
+
+
+
+
+/*  cake-options */
+
+.cake-options {
+    padding: 20px 15px;
+    box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 10%);
+    background: #fff;
+}
+
+.cake-options a::after {
+    display: none;
+}
+
+.cake-options__h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+    color: #9b806f;
+}
+
+.cake-options__h2 {
+    font-size: 22px;
+    text-align: center;
+    color: #9b806f;
+}
+
+.cake-options__sep {
+    height: 4px;
+    background: url('../images/cake-options/hr.png') repeat-x 0 0;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.cake-options__wrap {
+    position: relative;
+    padding: 0 30px;
+}
+
+.cake-options__next,
+.cake-options__prev {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    padding: .5em;
+    font-size: 25px;
+    color: #191919;
+}
+
+.cake-options__next {
+    right: -.8em;
+}
+
+.cake-options__prev {
+    left: -.8em;
+}
+
+.cake-options__list {
+    display: flex;
+    overflow: hidden;
+    margin: 0 -10px;
+}
+
+.cake-options__col {
+    flex: 0 0 100%;
+    max-width: 350px;
+    padding: 20px 10px;
+}
+
+.slick-slide .cake-options__col {
+    max-width: none;
+}
+
+.cake-options__item {
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 10%);
+    padding: 10px;
+}
+
+.cake-options__image {
+    margin-bottom: 20px;
+    background-size: cover;
+    padding-top: 70%;
+}
+
+.cake-options__image--square {
+    padding-top: 100%;
+}
+
+@media (min-width: 1027px) {
+    .cake-options {
+        padding: 20px 25px;
+    }
+    
+    .cake-options__h1 {
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+    .cake-options__h2 {
+        font-size: 23px;
+        text-transform: uppercase;
+    }
+    .cake-options__prev,
+    .cake-options__next {
+        font-size: 35px;
+    }
+    .cake-options__item {
+        padding: 15px;
     }
 }
